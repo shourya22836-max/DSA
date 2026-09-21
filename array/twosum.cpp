@@ -1,0 +1,57 @@
+// #1 leetcode
+
+// my code
+#include <bits/stdc++.h>
+using namespace std;
+
+class Solution {
+public:
+    vector<int> twoSum(vector<int>& nums, int target) {
+        for(i = 0; i<nums; i++){
+            for(j = 0; j < nums: j++){
+                if (nums[i] + nums[j] == target){
+                    break;
+                }
+                return i, j
+            }
+        }
+    }
+};
+
+int main(Solution){
+    nums = [1,2,3,4,5]
+    target = 8
+}
+
+// correct code
+
+#include <bits/stdc++.h>
+using namespace std;
+
+class Solution {
+public:
+    vector<int> twoSum(vector<int>& nums, int target) {
+        for (int i = 0; i < nums.size(); i++) {
+            for (int j = i + 1; j < nums.size(); j++) {
+                if (nums[i] + nums[j] == target) {
+                    return {i, j};
+                }
+            }
+        }
+
+        return {};
+    }
+};
+
+int main() {
+    Solution s;
+
+    vector<int> nums = {1, 2, 3, 4, 5};
+    int target = 8;
+
+    vector<int> result = s.twoSum(nums, target);
+
+    cout << result[0] << " " << result[1] << endl;
+
+    return 0;
+}
